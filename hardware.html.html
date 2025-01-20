@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Визажиста</title>
+    <link rel="stylesheet" href="h1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Визажист Марина</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#location">Локация</a></li>
+                <li><a href="#certificates">Сертификаты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главный баннер -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Создай свой неповторимый образ</h1>
+            <p>Профессиональный макияж для важных событий</p>
+            <a href="#portfolio" class="btn">Смотреть портфолио</a>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio" class="portfolio">
+        <h2>Мои работы</h2>
+        <div class="filter">
+            <select id="category-filter">
+                <option value="all">Все категории</option>
+                <option value="свадьба">Свадьба</option>
+                <option value="вечеринка">Вечеринка</option>
+                <option value="фотосессия">Фотосессия</option>
+                <option value="повседневный">Повседневный</option>
+            </select>
+            <input type="text" id="search-input" placeholder="Поиск по портфолио...">
+        </div>
+        <div class="works">
+            <div class="work" data-category="свадьба">
+                <img src="images/wedding1.jpg" alt="Свадебный макияж">
+                <h3>Свадебный макияж</h3>
+            </div>
+            <div class="work" data-category="вечеринка">
+                <img src="images/party1.jpg" alt="Вечеринка">
+                <h3>Макияж для вечеринки</h3>
+            </div>
+            <div class="work" data-category="фотосессия">
+                <img src="images/photoshoot1.jpg" alt="Фотосессия">
+                <h3>Макияж для фотосессии</h3>
+            </div>
+            <div class="work" data-category="повседневный">
+                <img src="images/daily1.jpg" alt="Повседневный макияж">
+                <h3>Повседневный макияж</h3>
+            </div>
+            <!-- Добавьте больше работ по аналогии -->
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section id="about" class="about">
+        <h2>Обо мне</h2>
+        <p>Привет! Я Марина, профессиональный визажист с 10-летним опытом работы. Я люблю создавать неповторимые образы для каждого клиента, чтобы подчеркнуть его индивидуальность и красоту.</p>
+        <div class="rating">
+            <input value="5" name="rate" id="star5" type="radio">
+            <label title="text" for="star5"></label>
+            <input value="4" name="rate" id="star4" type="radio">
+            <label title="text" for="star4"></label>
+            <input value="3" name="rate" id="star3" type="radio" checked="">
+            <label title="text" for="star3"></label>
+            <input value="2" name="rate" id="star2" type="radio">
+            <label title="text" for="star2"></label>
+            <input value="1" name="rate" id="star1" type="radio">
+            <label title="text" for="star1"></label>
+        </div>
+    </section>
+
+    <!-- Локация -->
+    <section id="location" class="location">
+        <h2>Локация</h2>
+        <p>Моя студия находится в самом сердце города. Приезжайте, и мы вместе создадим ваш идеальный образ!</p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d37.123456!3d55.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDUyJzM2LjMiTiAzN8KwMDcnMzcuMCJF!5e0!3m2!1sen!2sru!4v1629472800000!5m2!1sen!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Сертификаты -->
+    <section id="certificates" class="certificates">
+        <h2>Сертификаты</h2>
+        <div class="certificate-gallery">
+            <img src="images/certificate1.jpg" alt="Сертификат 1">
+            <img src="images/certificate2.jpg" alt="Сертификат 2">
+            <img src="images/certificate3.jpg" alt="Сертификат 3">
+            <!-- Добавьте больше сертификатов по аналогии -->
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <h2>Контакты</h2>
+        <p>Email: <a href="mailto:marina@makeupartist.com">marina@makeupartist.com</a></p>
+        <p>Телефон: <a href="tel:+71234567890">+7 (123) 456-7890</a></p>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2024 Визажист Марина. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
